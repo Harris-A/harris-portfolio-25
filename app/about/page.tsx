@@ -62,7 +62,7 @@ export default function AboutPage() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="grid grid-cols-1 gap-6 max-w-5xl mx-auto">
+                                    <div className="grid grid-cols-1 max-w-5xl mx-auto">
                                         <div className="bg-zinc-900/50 rounded-lg p-6 border border-zinc-800 hover:border-zinc-700 transition-colors">
                                             <h3 className="text-xl font-semibold text-white mb-4">Tools & Other</h3>
                                             <div className="flex flex-wrap items-center gap-4">
