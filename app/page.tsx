@@ -3,8 +3,9 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+    { name: "Projects", href: "/projects" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
 ];
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+              className="text-lg duration-500 text-zinc-500 hover:text-zinc-300"
             >
               {item.name}
             </Link>
@@ -26,16 +27,16 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
+        quantity={800}
       />
       <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         HARRIS ALAM
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
-          Front-end Developer, Web Designer, and Open Source Enthusiast.
+      <div className="my-15 text-center animate-fade-in">
+        <h2 className="text-lg text-green-500">
+          I am a Front-end Developer, Web Designer, and Open Source Enthusiast.
         </h2>
       </div>
     </div>
