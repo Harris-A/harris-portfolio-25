@@ -41,13 +41,13 @@ export default function AboutPage() {
                                             <h3 className="text-xl font-semibold text-white mb-4">Frontend</h3>
                                             <div className="flex flex-wrap items-center gap-3">
                                                 <StackIcon name="html5" className="w-10"/><span className="text-zinc-300 text-xs">HTML</span>
-                                                <StackIcon name="js" className="w-10 h-10"/><span className="text-zinc-300 text-xs">JavaScript</span>
-                                                <StackIcon name="reactjs" className="w-10 h-10"/><span className="text-zinc-300 text-xs">React</span>
-                                                <StackIcon name="nextjs2" className="w-10 h-10"/><span className="text-zinc-300 text-xs">NextJS</span>
-                                                <StackIcon name="tailwindcss" className="w-10 h-10"/><span className="text-zinc-300 text-xs">TailwindCSS</span>
-                                                <StackIcon name="bootstrap4" className="w-10 h-10"/><span className="text-zinc-300 text-xs">BootStrap</span>
-                                                <StackIcon name="css3" className="w-10 h-10"/><span className="text-zinc-300 text-xs">CSS</span>
-                                                <StackIcon name="less" className="w-10 h-10"/><span className="text-zinc-300 text-xs">LESS</span>
+                                                <StackIcon name="js" className="w-10"/><span className="text-zinc-300 text-xs">JavaScript</span>
+                                                <StackIcon name="reactjs" className="w-10"/><span className="text-zinc-300 text-xs">React</span>
+                                                <StackIcon name="nextjs2" className="w-10"/><span className="text-zinc-300 text-xs">NextJS</span>
+                                                <StackIcon name="tailwindcss" className="w-10"/><span className="text-zinc-300 text-xs">TailwindCSS</span>
+                                                <StackIcon name="bootstrap4" className="w-10"/><span className="text-zinc-300 text-xs">BootStrap</span>
+                                                <StackIcon name="css3" className="w-10"/><span className="text-zinc-300 text-xs">CSS</span>
+                                                <StackIcon name="less" className="w-10"/><span className="text-zinc-300 text-xs">LESS</span>
                                             </div>
                                         </div>
 
