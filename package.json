@@ -26,6 +26,7 @@
     "rehype-pretty-code": "^0.10.1",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "3.0.1",
+    "tech-stack-icons": "^2.1.0",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
