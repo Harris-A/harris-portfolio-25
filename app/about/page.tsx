@@ -5,6 +5,7 @@ import React from "react";
 import AnimatedTextSwap from "../components/animated-text-swap";
 import StackIcon from "tech-stack-icons";
 import ProfileCard from '../components/ProfileCard/ProfileCard';
+import RotatingText from "@/app/components/TextAnimations/RotatingText/RotatingText";
 
 export default function AboutPage() {
     return (
@@ -19,12 +20,14 @@ export default function AboutPage() {
                 {/* Container with spacing from navigation */}
                 <div className="pt-20 pb-12 px-4 sm:px-6 lg:px-8">
                     <div className="w-full max-w-6xl mx-auto">
+
+
                         <AnimatedTextSwap>
+
                             {/* Content that appears after animation */}
                             <div className="space-y-12">
                                 {/* Introduction section */}
-                                <div className="grid grid-cols-1 sm:flex items-center gap-6 text-center max-w-4xl mx-auto
-">
+                                <div className="grid grid-cols-1 sm:flex items-center gap-6 text-center max-w-4xl mx-auto">
                                     <ProfileCard
                                         name="Harris Alam"
                                         title="Front-end Developer"
@@ -33,6 +36,20 @@ export default function AboutPage() {
                                         className="flex justify-center"
                                     />
                                     <p className="text-xl text-zinc-300 leading-relaxed">
+                                        <span className="my-4 flex items-center justify-center text-zinc-300 text-4xl gap-3 font-extrabold tracking-tight">Creative
+                                            <RotatingText
+                                                texts={['coding', 'thinking', 'components!']}
+                                                mainClassName="px-2 sm:px-2 md:px-3 bg-green-400 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                                                staggerFrom={"last"}
+                                                initial={{ y: "100%" }}
+                                                animate={{ y: 0 }}
+                                                exit={{ y: "-120%" }}
+                                                staggerDuration={0.025}
+                                                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                                                transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                                                rotationInterval={2000}
+                                            />
+                                        </span>
                                         I'm a passionate front-end developer with a love for creating
                                         beautiful, functional, and user-friendly digital experiences.
                                         <br></br><br></br>
