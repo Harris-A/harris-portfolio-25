@@ -7,9 +7,12 @@ export default function ProjectsPage() {
     return (
         <>
             <Navigation />
-            <div className="flex flex-col items-center justify-center w-full min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black overflow-hidden px-4 sm:px-6 lg:px-8 py-12">
+            <div className="relative w-full bg-gradient-to-tl from-black via-zinc-600/20">
                 {/* Background particles */}
-                <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={800} />
+                <Particles
+                    className="absolute inset-0 -z-10 animate-fade-in"
+                    quantity={800}
+                />
 
                 {/* Title */}
                {/* <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8">
@@ -17,7 +20,7 @@ export default function ProjectsPage() {
                 </h1>*/}
 
                 {/* Project Grid */}
-                <div className="max-w-8xl mx-auto">
+                <div className="pt-20 pb-12 px-4 sm:px-6 lg:px-8">
                     <Projects />
                 </div>
             </div>
