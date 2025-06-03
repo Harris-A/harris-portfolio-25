@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://chronark.com"><h1 align="center">harrisalam.com</h1></a>
+    <a href="https://harrisalam.com"><h1 align="center">harrisalam.com</h1></a>
 
 My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) and deployed with [Vercel](https://vercel.com/).
 
@@ -13,7 +13,7 @@ My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](h
 ## Running Locally
 
 
-Create a `.env` file similar to [`.env.example`](https://github.com/chronark/chronark.com/blob/main/.env.example).
+Create a `.env` file similar to [`.env.example`](https://github.com/Harris-A/harris-portfolio-25/blob/main/.env.example).
 
 Then install dependencies and run the development server:
 ```sh-session
