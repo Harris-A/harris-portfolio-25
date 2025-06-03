@@ -38,7 +38,7 @@ export default function AboutPage() {
                                             Creative
                                             <RotatingText
                                                 texts={['coding', 'thinking', 'components!']}
-                                                mainClassName="px-2 sm:px-2 md:px-3 bg-green-500 text-black font-extrabold overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                                                mainClassName="px-2 sm:px-2 md:px-3 bg-purple-500 text-black font-extrabold overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                                                 staggerFrom={"last"}
                                                 initial={{ y: "100%" }}
                                                 animate={{ y: 0 }}
@@ -133,7 +133,7 @@ export default function AboutPage() {
                                     </div>
                                     <div className="experience-item">
                                         <p className="text-green-500 text-lg font-bold">Numagoo Ltd</p>
-                                        <p className="text-zinc-300 text-md">Magento Front-end Devloper</p>
+                                        <p className="text-zinc-300 text-md">Magento Front-end Developer</p>
                                         <p className="text-zinc-400 text-sm">Dec 2022 - May 2024</p>
                                         {/*<p className="text-zinc-300 text-sm">
                                             I am currently working as a Front-end Developer at Gtech. I am responsible for developing and maintaining the front-end of the company's website.

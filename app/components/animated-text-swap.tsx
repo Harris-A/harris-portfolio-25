@@ -62,7 +62,7 @@ export default function AnimatedTextSwap({ onAnimationComplete, children }: Anim
                                 transition={{ duration: 0.5 }}
                                 className="py-3.5 px-0.5 z-10 text-2xl text-zinc-100 font-display sm:text-2xl md:text-4xl whitespace-nowrap text-center"
                             >
-                                WHERE DESIGN MEETS CODE
+                                Pixels, Code and...
                             </motion.h1>
                         ) : (
                             <motion.h1
@@ -86,7 +86,7 @@ export default function AnimatedTextSwap({ onAnimationComplete, children }: Anim
                                         : 'text-4xl sm:text-6xl md:text-4xl'
                                 }`}
                             >
-                                MY JOURNEY...
+                                A bit about me
                             </motion.h1>
                         )}
                     </AnimatePresence>
