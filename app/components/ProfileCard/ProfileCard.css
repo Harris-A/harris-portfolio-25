@@ -209,7 +209,7 @@
   opacity: 1;
 }
 
-.pc-shine::before {
+/*.pc-shine::before {
   background-image:
     linear-gradient(
       45deg,
@@ -239,7 +239,7 @@
     contrast(calc(var(--pointer-from-center) + 2))
     saturate(calc(0.5 + var(--pointer-from-center)));
   mix-blend-mode: luminosity;
-}
+}*/
 
 .pc-shine::after {
   background-position:

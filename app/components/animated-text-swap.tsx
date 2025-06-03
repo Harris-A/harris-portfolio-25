@@ -60,9 +60,9 @@ export default function AnimatedTextSwap({ onAnimationComplete, children }: Anim
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -20 }}
                                 transition={{ duration: 0.5 }}
-                                className="py-3.5 px-0.5 z-10 text-4xl text-zinc-100 font-display sm:text-6xl md:text-9xl whitespace-nowrap text-center"
+                                className="py-3.5 px-0.5 z-10 text-2xl text-zinc-100 font-display sm:text-2xl md:text-4xl whitespace-nowrap text-center"
                             >
-                                HARRIS ALAM
+                                WHERE DESIGN MEETS CODE
                             </motion.h1>
                         ) : (
                             <motion.h1
@@ -82,8 +82,8 @@ export default function AnimatedTextSwap({ onAnimationComplete, children }: Anim
                                 }}
                                 className={`py-3.5 px-0.5 z-10 text-zinc-100 font-display whitespace-nowrap text-center transition-all duration-800 ${
                                     phase === 'slideUp'
-                                        ? 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl'
-                                        : 'text-4xl sm:text-6xl md:text-9xl'
+                                        ? 'text-2xl sm:text-3xl md:text-4xl lg:text-4xl'
+                                        : 'text-4xl sm:text-6xl md:text-4xl'
                                 }`}
                             >
                                 ABOUT ME

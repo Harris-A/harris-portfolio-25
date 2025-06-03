@@ -11,7 +11,7 @@ export default function AboutPage() {
     return (
         <>
             <Navigation />
-            <div className="w-full min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+            <div className="relative w-full bg-gradient-to-tl from-black via-zinc-600/20 to-black">
                 <Particles
                     className="absolute inset-0 -z-10 animate-fade-in"
                     quantity={375}
@@ -20,8 +20,6 @@ export default function AboutPage() {
                 {/* Container with spacing from navigation */}
                 <div className="pt-20 pb-12 px-4 sm:px-6 lg:px-8">
                     <div className="w-full max-w-6xl mx-auto">
-
-
                         <AnimatedTextSwap>
 
                             {/* Content that appears after animation */}
@@ -35,11 +33,12 @@ export default function AboutPage() {
                                         enableTilt={true}
                                         className="flex justify-center"
                                     />
-                                    <p className="text-xl text-zinc-300 leading-relaxed">
-                                        <span className="my-4 flex items-center justify-center text-zinc-300 text-4xl gap-3 font-extrabold tracking-tight">Creative
+                                    <div className="text-xl text-zinc-300 leading-relaxed">
+                                        <div className="my-4 flex items-center justify-center text-zinc-300 text-4xl gap-3 font-extrabold tracking-tight">
+                                            Creative
                                             <RotatingText
                                                 texts={['coding', 'thinking', 'components!']}
-                                                mainClassName="px-2 sm:px-2 md:px-3 bg-green-400 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                                                mainClassName="px-2 sm:px-2 md:px-3 bg-green-500 text-black font-extrabold overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                                                 staggerFrom={"last"}
                                                 initial={{ y: "100%" }}
                                                 animate={{ y: 0 }}
@@ -49,14 +48,18 @@ export default function AboutPage() {
                                                 transition={{ type: "spring", damping: 30, stiffness: 400 }}
                                                 rotationInterval={2000}
                                             />
-                                        </span>
-                                        I'm a passionate front-end developer with a love for creating
-                                        beautiful, functional, and user-friendly digital experiences.
-                                        <br></br><br></br>
-                                        With expertise in React, Next.js, and modern front-end web technologies, I bring ideas
-                                        to life through clean code and thoughtful design.
-                                    </p>
+                                        </div>
+                                        <p>
+                                            I'm a passionate front-end developer with a love for creating
+                                            beautiful, functional, and user-friendly digital experiences.
+                                        </p>
+                                        <p className="mt-4">
+                                            With expertise in React, Next.js, and modern front-end web technologies, I bring ideas
+                                            to life through clean code and thoughtful design.
+                                        </p>
+                                    </div>
                                 </div>
+
 
                                 {/* Skills and Experience grid */}
                                 <h2 className="text-lg text-zinc-100">My Stack</h2>
