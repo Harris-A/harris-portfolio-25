@@ -25,7 +25,7 @@ export default function AboutPage() {
                             {/* Content that appears after animation */}
                             <div className="space-y-12">
                                 {/* Introduction section */}
-                                <div className="grid grid-cols-1 sm:flex items-center gap-6 text-center max-w-4xl mx-auto">
+                                <div className="grid grid-cols-1 sm:flex items-center gap-6 text-center max-w-6xl mx-auto">
                                     <ProfileCard
                                         name="Harris Alam"
                                         title="Front-end Developer"
@@ -33,8 +33,8 @@ export default function AboutPage() {
                                         enableTilt={true}
                                         className="flex justify-center"
                                     />
-                                    <div className="text-xl text-zinc-300 leading-relaxed">
-                                        <div className="my-4 flex items-center justify-center text-zinc-300 text-4xl gap-3 font-extrabold tracking-tight">
+                                    <div className="text-lg text-zinc-300 leading-relaxed">
+                                        <div className="my-4 flex items-center justify-center text-zinc-300 text-6xl gap-3 font-extrabold tracking-tight">
                                             Creative
                                             <RotatingText
                                                 texts={['coding', 'thinking', 'components!']}
@@ -63,46 +63,46 @@ export default function AboutPage() {
 
                                 {/* Skills and Experience grid */}
                                 <h2 className="text-lg text-zinc-100">My Stack</h2>
-                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
                                     <div className="bg-zinc-900/50 rounded-lg p-6 border border-zinc-800 hover:border-zinc-700 transition-colors">
                                         <h3 className="text-xl font-semibold text-white mb-4">Frontend</h3>
                                         <div className="flex flex-wrap items-center gap-3">
-                                            <StackIcon name="html5" className="w-10"/><span className="text-zinc-300 text-xs">HTML</span>
-                                            <StackIcon name="js" className="w-10"/><span className="text-zinc-300 text-xs">JavaScript</span>
-                                            <StackIcon name="reactjs" className="w-10"/><span className="text-zinc-300 text-xs">React</span>
-                                            <StackIcon name="nextjs2" className="w-10"/><span className="text-zinc-300 text-xs">NextJS</span>
-                                            <StackIcon name="tailwindcss" className="w-10"/><span className="text-zinc-300 text-xs">TailwindCSS</span>
-                                            <StackIcon name="bootstrap4" className="w-10"/><span className="text-zinc-300 text-xs">BootStrap</span>
-                                            <StackIcon name="css3" className="w-10"/><span className="text-zinc-300 text-xs">CSS</span>
-                                            <StackIcon name="less" className="w-10"/><span className="text-zinc-300 text-xs">LESS</span>
+                                            <StackIcon name="html5" className="w-8"/><span className="text-zinc-300 text-xs">HTML</span>
+                                            <StackIcon name="js" className="w-8"/><span className="text-zinc-300 text-xs">JavaScript</span>
+                                            <StackIcon name="reactjs" className="w-8"/><span className="text-zinc-300 text-xs">React</span>
+                                            <StackIcon name="nextjs2" className="w-8"/><span className="text-zinc-300 text-xs">NextJS</span>
+                                            <StackIcon name="tailwindcss" className="w-8"/><span className="text-zinc-300 text-xs">TailwindCSS</span>
+                                            <StackIcon name="bootstrap4" className="w-8"/><span className="text-zinc-300 text-xs">BootStrap</span>
+                                            <StackIcon name="css3" className="w-8"/><span className="text-zinc-300 text-xs">CSS</span>
+                                            <StackIcon name="less" className="w-8"/><span className="text-zinc-300 text-xs">LESS</span>
                                         </div>
                                     </div>
 
                                     <div className="bg-zinc-900/50 rounded-lg p-6 border border-zinc-800 hover:border-zinc-700 transition-colors">
                                         <h3 className="text-xl font-semibold text-white mb-4">Backend & CMS</h3>
-                                        <div className="flex flex-wrap items-center gap-6">
-                                            <StackIcon name="mysql" className="w-10 h-10"/><span className="text-zinc-300 text-xs">MySQL</span>
-                                            <StackIcon name="prisma" className="w-10 h-10"/><span className="text-zinc-300 text-xs">Prisma ORM</span>
-                                            <StackIcon name="mariadb" className="w-10 h-10"/><span className="text-zinc-300 text-xs">MariaDB</span>
-                                            <StackIcon name="wordpress" className="w-10 h-10"/><span className="text-zinc-300 text-xs">WordPress</span>
-                                            <StackIcon name="graphql" className="w-10 h-10"/><span className="text-zinc-300 text-xs">GraphQL</span>
+                                        <div className="flex flex-wrap items-center gap-2">
+                                            <StackIcon name="mysql" className="w-8 h-10"/><span className="text-zinc-300 text-xs">MySQL</span>
+                                            <StackIcon name="prisma" className="w-8 h-10"/><span className="text-zinc-300 text-xs">Prisma ORM</span>
+                                            <StackIcon name="mariadb" className="w-8 h-10"/><span className="text-zinc-300 text-xs">MariaDB</span>
+                                            <StackIcon name="wordpress" className="w-8 h-10"/><span className="text-zinc-300 text-xs">WordPress</span>
+                                            <StackIcon name="graphql" className="w-8 h-10"/><span className="text-zinc-300 text-xs">GraphQL</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="grid grid-cols-1 max-w-5xl mx-auto">
+                                <div className="grid grid-cols-1 max-w-6xl mx-auto">
                                     <div className="bg-zinc-900/50 rounded-lg p-6 border border-zinc-800 hover:border-zinc-700 transition-colors">
                                         <h3 className="text-xl font-semibold text-white mb-4">Tools & Other</h3>
-                                        <div className="flex flex-wrap items-center gap-4">
-                                            <StackIcon name="atom" className="w-10"/><span className="text-zinc-300 text-xs">Atom</span>
-                                            <StackIcon name="jira" className="w-10 h-10"/><span className="text-zinc-300 text-xs">JIRA</span>
-                                            <StackIcon name="github" className="w-10 h-10"/><span className="text-zinc-300 text-xs">GitHub</span>
-                                            <StackIcon name="radixui" className="w-10 h-10"/><span className="text-zinc-300 text-xs">RadixUI</span>
+                                        <div className="flex flex-wrap items-center gap-3">
+                                            <StackIcon name="atom" className="w-8"/><span className="text-zinc-300 text-xs">Atom</span>
+                                            <StackIcon name="jira" className="w-8 h-10"/><span className="text-zinc-300 text-xs">JIRA</span>
+                                            <StackIcon name="github" className="w-8 h-10"/><span className="text-zinc-300 text-xs">GitHub</span>
+                                            <StackIcon name="radixui" className="w-8 h-10"/><span className="text-zinc-300 text-xs">RadixUI</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Additional content sections */}
-                                <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                                {/*<div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">*/}
                                     {/*<div className="space-y-4">
                                         <h3 className="text-2xl font-semibold text-white">What I Do</h3>
                                         <ul className="space-y-3 text-zinc-300">
@@ -141,7 +141,7 @@ export default function AboutPage() {
                                             </button>
                                         </div>
                                     </div>*/}
-                                </div>
+                                {/*</div>*/}
                             </div>
                         </AnimatedTextSwap>
                     </div>

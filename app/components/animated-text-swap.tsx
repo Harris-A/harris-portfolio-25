@@ -86,7 +86,7 @@ export default function AnimatedTextSwap({ onAnimationComplete, children }: Anim
                                         : 'text-4xl sm:text-6xl md:text-4xl'
                                 }`}
                             >
-                                ABOUT ME
+                                MY JOURNEY...
                             </motion.h1>
                         )}
                     </AnimatePresence>
