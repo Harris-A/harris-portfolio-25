@@ -34,7 +34,7 @@ export default function AboutPage() {
                                         className="flex justify-center"
                                     />
                                     <div className="text-lg text-zinc-300 leading-relaxed">
-                                        <div className="my-4 flex items-center justify-center text-zinc-300 text-6xl gap-3 font-extrabold tracking-tight">
+                                        <div className="my-4 flex items-center justify-center text-zinc-300 text-2xl gap-3 font-extrabold tracking-tight">
                                             Creative
                                             <RotatingText
                                                 texts={['coding', 'thinking', 'components!']}
