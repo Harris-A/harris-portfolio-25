@@ -7,14 +7,19 @@ import StackIcon from "tech-stack-icons";
 import ProfileCard from '../components/ProfileCard/ProfileCard';
 import RotatingText from "@/app/components/TextAnimations/RotatingText/RotatingText";
 import ScrollFloat from "@/app/components/TextAnimations/ScrollFloat/ScrollFloat";
+import LetterGlitch from "@/app/components/blocks/Backgrounds/LetterGlitch/LetterGlitch";
+
+import Timeline from "@/app/components/timeline";
+import {Typography, Button} from "@mui/material";
 export default function AboutPage() {
     return (
         <>
             <Navigation />
+
             <div className="relative w-full bg-gradient-to-tl from-black via-zinc-600/20 to-black">
                 <Particles
                     className="absolute inset-0 -z-10 animate-fade-in"
-                    quantity={375}
+                    quantity={400}
                 />
 
                 {/* Container with spacing from navigation */}
@@ -114,45 +119,53 @@ export default function AboutPage() {
                                         My Experience
                                     </ScrollFloat>
                                 </div>
-                                <div className="max-w-6xl grid gap-8">
-                                    <div className="experience-item">
-                                        <p className="text-green-500 text-lg font-bold">Gtech (Grey Technology Ltd)</p>
-                                        <p className="text-zinc-300 text-md">Front-end Developer</p>
-                                        <p className="text-zinc-400 text-sm">Sept 2024 - Present</p>
-                                        {/*<p className="text-zinc-300 text-sm">
-                                            I am currently working as a Front-end Developer at Gtech. I am responsible for developing and maintaining the front-end of the company's website.
-                                        </p>*/}
-                                    </div>
-                                    <div className="experience-item">
-                                        <p className="text-green-500 text-lg font-bold">Nvisage</p>
-                                        <p className="text-zinc-300 text-md">Magento Developer (Freelance)</p>
-                                        <p className="text-zinc-400 text-sm">May 2024 - Aug 2024</p>
-                                        {/*<p className="text-zinc-300 text-sm">
-                                            I am currently working as a Front-end Developer at Gtech. I am responsible for developing and maintaining the front-end of the company's website.
-                                        </p>*/}
-                                    </div>
-                                    <div className="experience-item">
-                                        <p className="text-green-500 text-lg font-bold">Numagoo Ltd</p>
-                                        <p className="text-zinc-300 text-md">Magento Front-end Developer</p>
-                                        <p className="text-zinc-400 text-sm">Dec 2022 - May 2024</p>
-                                        {/*<p className="text-zinc-300 text-sm">
-                                            I am currently working as a Front-end Developer at Gtech. I am responsible for developing and maintaining the front-end of the company's website.
-                                        </p>*/}
-                                    </div>
-                                    <div className="experience-item">
-                                        <p className="text-green-500 text-lg font-bold">OGL Software</p>
-                                        <p className="text-zinc-300 text-md">Web Developer</p>
-                                        <p className="text-zinc-400 text-sm">Feb 2019 - Dec 2022</p>
-                                        {/*<p className="text-zinc-300 text-sm">
-                                            I am currently working as a Front-end Developer at Gtech. I am responsible for developing and maintaining the front-end of the company's website.
-                                        </p>*/}
+
+                               { /* Timeline of experience section */ }
+                                <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                    <div>
+                                        <Timeline />
                                     </div>
 
+                                    {/* Right column - Canvas with LetterGlitch background */}
+                                    <div className="relative bg-black rounded-lg overflow-hidden">
+                                        {/* LetterGlitch as background for this canvas area */}
+                                        <div className="absolute inset-0">
+                                            <LetterGlitch
+                                                glitchSpeed={50}
+                                                centerVignette={false}
+                                                outerVignette={false}
+                                                smooth={true}
+                                                glitchColors={["#2b4539", "#22c55e", "#61b3dc"]}
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
 
-
-                                <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                                <div className="flex flex-col justify-center items-center bg-zinc-900/50 rounded-lg p-8 border border-zinc-800 hover:border-zinc-700 transition-colors space-y-4">
+                                    <h3 className="text-xl font-semibold text-zinc-100 mb-2">Get in touch</h3>
+                                    <p className="text-zinc-300 text-lg">
+                                        harrisalam3@gmail.com
+                                    </p>
+                                    <Button
+                                        href="/projects"
+                                        variant="outlined"
+                                        id="projects-btn"
+                                        sx={{
+                                            borderColor: '#a855f7', // purple-500
+                                            color: '#a855f7',
+                                            '&:hover': {
+                                                borderColor: '#9333ea', // purple-600
+                                                backgroundColor: 'rgba(168, 85, 247, 0.1)',
+                                            },
+                                            fontWeight: 600,
+                                            textTransform: 'none',
+                                            padding: '8px 24px',
+                                        }}
+                                    >
+                                        View my Projects
+                                    </Button>
                                 </div>
+
                             </div>
                         </AnimatedTextSwap>
                     </div>
